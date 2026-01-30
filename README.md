@@ -17,6 +17,17 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 cars
 
 # PROGRAM
+```
+from django.db import models
+from django.contrib import admin
+
+class ecommerce(models.Model):
+    product_name=models.CharField(max_length=20)
+    product_price=models.IntegerField()
+
+class ecommerce_admin(admin.ModelAdmin):
+    list_display=['product_name','product_price']
+```
 # OUTPUT
 Include the screenshot of your admin page.
 
